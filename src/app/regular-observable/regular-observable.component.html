@@ -1,0 +1,12 @@
+<div class="regular-observable">
+    <h2>Regular Observable</h2>
+    <div>
+        <input type="text" #txtInput>
+        <button (click)="add(txtInput)">Add</button>
+    </div>
+    <div class="list">
+        <ul>
+            <li *ngFor="let item of data"> {{ item }} </li>
+        </ul>
+    </div>
+</div>
